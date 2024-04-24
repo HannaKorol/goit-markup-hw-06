@@ -87,7 +87,7 @@ color: #2e2f42;
 }
 
 .header-menu-list {
-display: flex;
+display: none;
 gap: 40px;
 }
 
@@ -144,7 +144,7 @@ background-color: #404bbf;
 }
 
 .address-list {
-display: flex;
+display: none;
 gap: 40px;
 align-items: center;
 margin-left: 332px;
@@ -169,6 +169,27 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #404bbf;
 }
 
+
+.mob-menu {}
+
+.menu-close-btn {}
+
+.mob-menu-list {}
+
+.mob-menu-item {}
+
+.header-menu-link-hover {}
+
+.header-menu-link {}
+
+.mob-address {}
+
+.mob-address-list {}
+
+.mob-address-list-item {}
+
+.address-list-link {}
+
 /*------------------------------------HEADER END ---------------------*/
 
 /*------------------------------------HERO ---------------------*/
@@ -186,6 +207,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
   max-width: 1440px;
   background-size: cover;
+}
+
+@media screen and (min-resolution: 2dppx),
+ (min-resolution: 192dpi),
+ (-webkit-min-device-pixel-ration: 2) {
+  .hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bgd-mob-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -401,8 +432,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /* ----------------------------PORTFOLIO------------------------------------- */
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 
 .container-portfolio {
@@ -913,6 +945,16 @@ padding-right: 16px;
     text-align: center;
   }
 
+    @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ration: 2) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/hero-bgd-tab-2x.jpg);
+      }
+    }
+
   .features {
     padding: 96px 0;
   }
@@ -951,9 +993,25 @@ width: 356px;
   padding: 96px 0;
 }
 
+.team > .container {
+  width: 584px;
+}
+
 .team-list {
-  padding: 0 12px;
-  gap: 72px;
+  gap: 72px 24px;
+}
+
+.container-portfolio {
+max-width: 356px;
+}
+
+.portfolio-list {
+  max-width: 1128px;
+  row-gap: 72px;
+}
+
+.portfolio-list-item {
+  max-width: 356px;
 }
 
 
@@ -968,6 +1026,16 @@ width: 356px;
     width: 496px;
     text-align: center;
   }
+
+    @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ration: 2) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/hero-bgd-comp-2x.jpg);
+      }
+    }
 
   .features {
     padding: 120px 0;
@@ -1003,5 +1071,16 @@ max-width: 264px;
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
- } 
- }
+} 
+
+.team-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px; 
+}
+}
