@@ -292,6 +292,7 @@ margin-bottom: 24px;
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      display: block;
     }
     
     .address-list-link:hover,
@@ -333,25 +334,25 @@ margin-bottom: 24px;
   .menu-open-btn {
     display: none;
   }
-
 }
 
-@media screen and (min-width 1158px) {
+
+
+@media screen and (min-width: 1158px ) {
   .header-logo {
     margin-right: 76px;
   }
 
-  .address-list {
-    display: flex;
+.address-list {
+  display: flex;
   flex-direction: row;
   gap: 40px; 
   }
+
   .address-list-link {
     font-size: 16px;
     line-height: 1,5;
-
   }
-;
 }
 
 /*------------------------------------HEADER END ---------------------*/
@@ -365,7 +366,7 @@ margin-bottom: 24px;
   background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/hero-bgd.jpg);
+    url(../images/hero-bgd-mob@1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -379,7 +380,7 @@ margin-bottom: 24px;
   .hero {
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/hero-bgd-mob-2x.jpg);
+    url(../images/hero-bgd-mob@2.jpg);
   }
 }
 
@@ -421,6 +422,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .hero-button:focus {
   background-color: #404BBF;
 }
+
 
 /*------------------------------------HERO END ---------------------*/
 
@@ -1109,13 +1111,19 @@ padding-right: 16px; */
     text-align: center;
   }
 
+.hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+url(../images/hero-bgd-tab@1.jpg);
+}
+
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ration: 2) {
       .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-          url(../images/hero-bgd-tab-2x.jpg);
+          url(../images/hero-bgd-tab@2.jpg);
       }
     }
 
@@ -1183,7 +1191,6 @@ max-width: 356px;
   .container {
   max-width: 1158px;
 padding:0 15px;
-
   }
 
   .hero-title {
@@ -1191,15 +1198,21 @@ padding:0 15px;
     text-align: center;
   }
 
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+   rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bgd-comp@1.jpg);
+}
+
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ration: 2) {
       .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-          url(../images/hero-bgd-comp-2x.jpg);
+          url(../images/hero-bgd-comp@2.jpg);
       }
-    }
+}
 
   .features {
     padding: 120px 0;
